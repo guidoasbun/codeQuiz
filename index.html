@@ -11,7 +11,39 @@
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-  <div class="container"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <div class="alert alert-primary" role="alert">
+          View High Scores
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="alert alert-danger" role="alert">
+          Time:
+        </div>
+      </div>
+    </div>
+    <div id="question-container" class=" card hide">
+      <div id="question"><h1>Question</h1></div>
+      <div id="answer-buttons" class="btn-grid">
+        <button class="btn btn-primary">Answer 1</button>
+        <button class="btn btn-primary">Answer 2</button>
+        <button class="btn btn-primary">Answer 3</button>
+        <button class="btn btn-primary">Answer 4</button>
+      </div>
+    </div>
+    <div class="controls">
+      <button id="start-btn" class="start-btn btn btn-danger btn-lg">Start</button>
+      <button id="next-btn" class="next-btn btn-success btn-lg btn hide">Next</button>
+    </div>
+  </div>
+
+
+
+
+
+
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
