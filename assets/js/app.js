@@ -1,6 +1,6 @@
 const start = document.getElementById("start")
 const questionContainer = document.getElementById("question-container")
-const next = document.getElementById("next-btn")
+// const next = document.getElementById("next-btn")
 const questionElement = document.getElementById("question")
 const answersButtonsElement = document.getElementById("answer-btns")
 const choiceA = document.getElementById("A")
@@ -83,9 +83,7 @@ let questions = [
   }
 ]
 
-
 let currentQuestionsIndex = 0
-
 let score = 0
 
 function renderQuestion (){
@@ -107,10 +105,7 @@ function startQuiz() {
   nextQuestion()
 }
 
-next.addEventListener("click", function(){
-  currentQuestionsIndex ++
-  nextQuestion()
-})
+
 
 function nextQuestion(){
   
@@ -120,3 +115,7 @@ function nextQuestion(){
 
 
   
+// next.addEventListener("click", function(){
+//   currentQuestionsIndex ++
+//   nextQuestion()
+// })
