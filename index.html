@@ -15,36 +15,38 @@
     <div class="jumbotron text-center m-5">
 
       <div id="intro-container">
-      <h2>Press start button to start Quiz</h2>
-      <button id="start" class="btn btn-danger btn-lg">Start</button>
+        <h2>Press start button to start Quiz</h2>
+        <button id="start" class="btn btn-danger btn-lg">Start</button>
       </div>
       
       <div id="question-container" class="hide">
-        <div id="question">
-        <h2>This is the first question sample</h2>
-        </div>
+        <div id="question"></div>
         <div id="answer-btns">
-          <button id="A" type="button" class="btn btn-primary">Answer 1</button>
-          <button id="B" type="button" class="btn btn-primary">Answer 2</button>
-          <button id="C" type="button" class="btn btn-primary">Answer 3</button>
-          <button id="D" type="button" class="btn btn-primary">Answer 4</button>
+          <button id="A" type="button" class="btn btn-primary" onclick="checkAnswer('A')"></button>
+          <button id="B" type="button" class="btn btn-primary" onclick="checkAnswer('B')"></button>
+          <button id="C" type="button" class="btn btn-primary" onclick="checkAnswer('C')"></button>
+          <button id="D" type="button" class="btn btn-primary" onclick="checkAnswer('D')"></button>
         </div>
-      <!-- <div>
-        <button id="next-btn" type="button" class="btn btn-success m-3">Next</button>
-      </div> -->
+        <hr class="my-2">
+        <br>
+        <div id="timer" class="text-left ">
+          <h4>Time remaining:</h4>
+        </div>
+      </div>
+  
+      <div id="score-container" class="hide">
+        <h2 id="score">Score:</h2>
       </div>
 
-
-
-
     </div>
-
 
   </div>
 
 
   
-
+<!-- <div>
+        <button id="next-btn" type="button" class="btn btn-success m-3">Next</button>
+      </div> -->
 
 
 
