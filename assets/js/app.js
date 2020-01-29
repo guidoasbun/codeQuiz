@@ -11,20 +11,20 @@ const score = document.getElementById("score")
 
 let questions = [
   {
-    question: 'This is the first question array',
-    ansA: '1st answer',
-    ansB: '2nd answer',
-    ansC: '3rd answer',
-    ansD: '4th answer',
+    question: 'What does HTML stand for?',
+    ansA: 'Hyper Text Markup Language',
+    ansB: 'Hello There My Lad',
+    ansC: 'High Table Makes Loud',
+    ansD: 'Hydro Turbine Marine Layer',
     correct: "A"
   },
   {
-    question: 'This is the second question',
-    ansA: '1st answer',
-    ansB: '2nd answer',
-    ansC: '3rd answer',
-    ansD: '4th answer',
-    correct: "A"
+    question: 'What does CSS Stand for?',
+    ansA: 'Computer Savy Surfer',
+    ansB: 'Course Sent Silicon',
+    ansC: 'Cascading Style Sheet',
+    ansD: 'Cascadin Silicone Sheet',
+    correct: "C"
   },
   {
     question: 'This is the third question',
