@@ -8,6 +8,7 @@ const choiceC = document.getElementById("C")
 const choiceD = document.getElementById("D")
 const score = document.getElementById("score")
 const timerElement = document.getElementById("timer-element")
+const result = document.getElementById("result")
 
 let questions = [
   {
@@ -120,6 +121,9 @@ function startQuiz() {
 function checkAnswer(answer) {
   if (answer == questions[currentQuestionsIndex].correct) {
     totalScore++
+    correctAnswer()
+  }else {
+    wrongAnswer()
   }
   if(currentQuestionsIndex < lastQuestionIndex){
     currentQuestionsIndex++
@@ -129,6 +133,15 @@ function checkAnswer(answer) {
     $("#score-container").show()
     renderScore()
   }
+}
+
+function correctAnswer(){
+  result.innerHTML = "Correct!!"
+}
+
+function wrongAnswer() {
+  result.innerHTML = "Incorect, you lost 5 seconds"
+  quizTime = quizTime - 5
 }
 
 function renderScore (){
