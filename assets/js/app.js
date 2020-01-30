@@ -95,7 +95,7 @@ let questions = [
 let lastQuestionIndex = questions.length -1 
 let currentQuestionsIndex = 0
 let totalScore = 0
-let quizTime = 5 + 1
+let quizTime = 60 + 1
 
 
 function renderQuestion (){
@@ -120,7 +120,7 @@ function startQuiz() {
 function checkAnswer(answer) {
   if (answer == questions[currentQuestionsIndex].correct) {
     totalScore++
-  } 
+  }
   if(currentQuestionsIndex < lastQuestionIndex){
     currentQuestionsIndex++
     renderQuestion()
