@@ -9,6 +9,7 @@ const choiceD = document.getElementById("D")
 const score = document.getElementById("score")
 const timerElement = document.getElementById("timer-element")
 const result = document.getElementById("result")
+const restart = document.getElementById("restartBtn")
 
 let questions = [
   {
@@ -109,7 +110,22 @@ function renderQuestion (){
 }
 
 start.addEventListener("click", startQuiz)
- 
+restart.addEventListener("click", restartQuiz)
+
+function reset(){
+  quizTime = 60 + 1
+  totalScore = 0
+  currentQuestionsIndex = 0
+  lastQuestionIndex = questions.length - 1 
+  $("#score-container").hide()
+}
+
+function restartQuiz(){
+  
+  startQuiz()
+  reset()
+}
+
 function startQuiz() {
   $("#intro-container").hide()
   renderQuestion()
