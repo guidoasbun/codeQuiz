@@ -98,7 +98,7 @@ let lastQuestionIndex = questions.length -1
 let currentQuestionsIndex = 0
 let totalScore = 0
 let quizTime = 60 + 1
-
+let quizTimer = setInterval(renderTimer, 1000)
 
 function renderQuestion (){
   let i = questions[currentQuestionsIndex]
@@ -117,6 +117,7 @@ function reset(){
   totalScore = 0
   currentQuestionsIndex = 0
   lastQuestionIndex = questions.length - 1 
+  let quizTimer = setInterval(renderTimer, 1000)
   $("#score-container").hide()
 }
 
@@ -128,10 +129,11 @@ function restartQuiz(){
 
 function startQuiz() {
   $("#intro-container").hide()
-  renderQuestion()
   $("#question-container").show()
+  $("#score-container").hide()
+  renderQuestion()
   renderTimer()
-  let quizTimer = setInterval(renderTimer, 1000)
+  
 }
 
 function checkAnswer(answer) {
@@ -145,6 +147,7 @@ function checkAnswer(answer) {
     currentQuestionsIndex++
     renderQuestion()
   }else{
+    $("#intro-container").hide()
     $("#question-container").hide()
     $("#score-container").show()
     renderScore()
@@ -169,6 +172,7 @@ function renderTimer(){
   quizTime --
   timerElement.innerHTML = 'Time remaining: '+ quizTime
   if (quizTime === 0){
+    $("#intro-container").hide()
     $("#question-container").hide()
     $("#score-container").show()
     renderScore()
