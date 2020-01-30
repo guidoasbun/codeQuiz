@@ -27,68 +27,68 @@ let questions = [
     correct: "C"
   },
   {
-    question: 'This is the third question',
-    ansA: '1st answer',
-    ansB: '2nd answer',
-    ansC: '3rd answer',
-    ansD: '4th answer',
+    question: "In HTML, the <title> element is located inside",
+    ansA: '<head> element',
+    ansB: '<body> element',
+    ansC: '<link> element',
+    ansD: 'Is not an element of HTML',
+    correct: "B"
+  },
+  {
+    question: 'In HTML, Where can we use the <style> tag?',
+    ansA: 'Just in <head> element',
+    ansB: 'Just in <body> element',
+    ansC: 'In <head> and in <body> elements',
+    ansD: '<style> is not an HTML element',
     correct: "A"
   },
   {
-    question: 'This is the fourth question',
-    ansA: '1st answer',
-    ansB: '2nd answer',
-    ansC: '3rd answer',
-    ansD: '4th answer',
+    question: 'Inside which HTML element do we put the JavaScript?',
+    ansA: '<js>',
+    ansB: '<javascript>',
+    ansC: '<script>',
+    ansD: '<scripting>',
+    correct: "C"
+  },
+  {
+    question: 'Where is the correct place to insert JavaScript?',
+    ansA: 'The <head> section',
+    ansB: 'Both the <head> and the <body> section',
+    ansC: 'The <body> section',
+    ansD: 'You do not isert JavaScript',
+    correct: "B"
+  },
+  {
+    question: 'How do you call a function named "myFunction"?',
+    ansA: 'myFunction()',
+    ansB: 'call function myFunction()',
+    ansC: 'call myFunction()',
+    ansD: 'run.myFunction',
     correct: "A"
   },
   {
-    question: 'This is the fifth question',
-    ansA: '1st answer',
-    ansB: '2nd answer',
-    ansC: '3rd answer',
-    ansD: '4th answer',
-    correct: "A"
+    question: 'How to write an IF statement for executing some code if "i" is NOT equal to 5?',
+    ansA: 'if(i<>5)',
+    ansB: 'if i=! then',
+    ansC: 'if i <> 5',
+    ansD: 'if(i !=5)',
+    correct: "D"
   },
   {
-    question: 'This is the sixth question',
-    ansA: '1st answer',
-    ansB: '2nd answer',
-    ansC: '3rd answer',
-    ansD: '4th answer',
-    correct: "A"
+    question: 'Where in an HTML document is the correct place to refer to an external style sheet?',
+    ansA: 'In the <body> section',
+    ansB: 'In the <head> section',
+    ansC: 'At the end of the document',
+    ansD: 'Outside the <html>',
+    correct: "B"
   },
   {
-    question: 'This is the seventh question',
-    ansA: '1st answer',
-    ansB: '2nd answer',
-    ansC: '3rd answer',
-    ansD: '4th answer',
-    correct: "A"
-  },
-  {
-    question: 'This is the eigth question',
-    ansA: '1st answer',
-    ansB: '2nd answer',
-    ansC: '3rd answer',
-    ansD: '4th answer',
-    correct: "A"
-  },
-  {
-    question: 'This is the ninth question',
-    ansA: '1st answer',
-    ansB: '2nd answer',
-    ansC: '3rd answer',
-    ansD: '4th answer',
-    correct: "A"
-  },
-  {
-    question: 'This is the tenth question',
-    ansA: '1st answer',
-    ansB: '2nd answer',
-    ansC: '3rd answer',
-    ansD: '4th answer',
-    correct: "A"
+    question: 'Which HTML attribute is used to define inline styles?',
+    ansA: 'styles',
+    ansB: 'font',
+    ansC: 'class',
+    ansD: 'style',
+    correct: "D"
   }
 ]
 
